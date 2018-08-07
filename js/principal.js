@@ -1,8 +1,18 @@
 
         var titulo = (document.querySelector(".titulo"));
-        console.log(titulo);
-        console.log(titulo.textContent);
-
         titulo.textContent = "Aparecida Nutricionista";
-        console.log("Fui carregado de um arquivo externo");
-     
+
+        var paciente = document.querySelector("#primeiro-paciente");
+
+
+        var tdPeso = paciente.querySelector(".info-peso");
+        var tdAltura = paciente.querySelector(".info-altura")
+
+
+
+        var peso = tdPeso.textContent;
+        var altura = tdAltura.textContent;
+
+      
+        var imc  = peso / (altura * altura);
+        console.log(imc);
