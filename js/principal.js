@@ -40,7 +40,16 @@
                tdImc.textContent = imc.toFixed(2);       
         }
 
-        
-        
 
         }
+
+
+        var botaoAdicionar = document.querySelector("#adicionar-paciente");
+
+        botaoAdicionar.addEventListener("click" ,function(event){
+                event.preventDefault(); // esta função "rempve" o efeito do botão
+                        console.log("Oi cliquei no botão");
+                
+        });
+
+       
